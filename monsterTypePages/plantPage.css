@@ -1,0 +1,60 @@
+
+html {
+    background-image: url("../images/0Epic Background.jpg");
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+
+#quickGen {
+    margin: 20 px;
+    padding: 20px;
+}
+
+body {
+    background-image: linear-gradient(rgba(4,9,30,0.75), rgba(4,9,30,0.75)), url("../images/plantImage.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    left: 25em;
+    max-width: 1100px;
+    height: 1300px;
+    padding: 8px;
+    margin:0;
+    border: solid burlywood;
+    border-width: 0px 4px;
+    border-style: ridge;
+}
+
+p {
+    color: burlywood;
+    font-size: 22px;
+}
+
+nav {
+    border-width: 8px;
+    border-style: ridge;
+    width: 380px;
+    padding: 15px;
+    margin: 5px;
+    position: static;
+}
+
+div {
+    width: 100%;
+
+    color: burlywood;
+    font-size: 22px;
+}
+
+button {
+    background-image: linear-gradient(rgba(4,9,30,0.45), rgba(4,9,30,0.45)), url("../images/0Epic Background.jpg");
+    font-size: 18px;
+    color: burlywood;
+}
+
+h1 {
+    color: burlywood;
+    position: relative;
+    left: 35%;
+}

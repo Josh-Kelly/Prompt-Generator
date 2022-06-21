@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+
+
+
+<head>
+    <script src="macrobiotePage.js"></script>
+    <link rel="stylesheet" href="macrobiotePage.css">
+</head>
+
+
+
+<body>
+    <h1>MACROBIOTE GENERATOR</h1>
+    <div id="quickGen">
+        <button onclick="rollBodyForm(), rollLimbs(), rollAttribute(), rollName(), rollAttacks(), rollDefenses()">Quick Generate</button>
+    </div>
+
+    <div id="nameDiv">
+        <button onclick="rollName()">Macrobiote's Name</button>
+        <p id="nameText"></p>
+    </div>
+    
+    <div id="bodyShapeDiv">
+        <button onclick="rollBodyForm()">Basic Shape</button>
+        <p id="bodyShapeText"></p>
+    </div>
+
+    <div id="limbsDiv">
+        <button onclick="rollLimbs()">Limbs</button>
+        <p id="limbsText"></p>
+    </div>
+
+    <div id="specialAttributeDiv">
+        <button onclick="rollAttribute()">Special Attribute/Fact</button>
+        <p id="specialAttributeText"></p>
+    </div>
+
+    <div id="specAttackDiv">
+        <button onclick="rollAttacks()">Special Attacks</button>
+        <p id="specAttackText1"></p>
+        <p id="specAttackText2"></p>
+        <p id="specAttackText3"></p>
+    </div>
+
+    <div id="specDefenseDiv">
+        <button onclick="rollDefenses()">Special Defenses</button>
+        <p id="specDefenseText1"></p>
+        <p id="specDefenseText2"></p>
+        <p id="specDefenseText3"></p>
+    </div>
+</body>
+
+
+
+
+
+
+
+</html>

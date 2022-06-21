@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+
+
+
+<head>
+    <script src="planarPage.js"></script>
+    <link rel="stylesheet" href="planarPage.css">
+</head>
+
+
+
+<body onload = "clearAll()">
+    <h1>PLANAR BEING GENERATOR</h1>
+    <div id="quickGen">
+        <select id="planarSelect">
+            <option value="blank" onclick="clearAll()" selected>----------</option>
+            <option value="darkAngel" onclick="clearAll(), createDarkAngelPage()">Dark Angel</option>
+            <option value="demon" onclick="clearAll(), createDemonicPage()">Demonic Creature</option>
+            <option value="summon" onclick="clearAll(), createSummonPage()">Summoned</option>
+            <option value="traveler" onclick="clearAll(), createTravelerPage()">Traveler</option>
+            <option value="visitation" onclick="clearAll(), createVisitationPage()">Visitation</option>
+        </select>
+    </div>
+
+    <div id="displayDiv">
+
+    </div>
+</body>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+
+
+<head>
+    <script src="beastPage.js"></script>
+    <link rel="stylesheet" href="beastPage.css">
+</head>
+
+
+
+<body>
+    <h1>BEAST GENERATOR</h1>
+    <div id="quickGen">
+        <button onclick="rollStarterImage(), rollAttributes(), rollSpecAttack(), rollSpecDefense(), additionalInspiration()">Quick Generate</button>
+    </div>
+    <div id="starterImageDiv">
+        <button onclick="rollStarterImage()">Starter Image</button>
+        <p id="starterImageText"></p>
+    </div>
+
+    <div id="mixedAttributesDisplayDiv">
+        <button onclick="rollAttributes()">Attributes to Mix</button>
+        <p id="mixedAttributeText1"></p>
+        <p id="mixedAttributeText2"></p>
+    </div>
+
+    <div id="specialAttacksDisplayDiv">
+        <button onclick="rollSpecAttack()">Special Attack</button>
+        
+        <p id="specAttackText"></p>
+        <p id="specAttackDeliveryText"></p>
+    </div>
+
+    <div id="specialDefensesDisplayDiv">
+        <button onclick="rollSpecDefense()">Special Defense/Ability and Distinctive Attribute</button>
+        
+        <p id="specDefenseText"></p>
+        <p id="distinctiveAttributeText"></p>
+    </div>
+
+    <div id="additionalInspirationDiv">
+        <button onclick="additionalInspiration()">Additional Inspiration</button>
+        
+        <p id="folkloreShapeText">Folkloric Shape: </p>
+        <p id="foodMethodText">Method of Obtaining Food: </p>
+        <p id="reproductiveStrategyText">Reproductive Strategy: </p>
+    </div>
+</body>
+
+
+
+
+
+
+
+</html>

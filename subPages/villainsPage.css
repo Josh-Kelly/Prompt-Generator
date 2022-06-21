@@ -1,0 +1,17 @@
+#missionText {
+    border-width: 5px;
+    border-style: ridge;
+    padding: 5px;
+    max-width: 800px;
+    margin: 5px;
+}
+
+body {
+    background-image: linear-gradient(rgba(4,9,30,0.45), rgba(4,9,30,0.45)), url("../images/0Epic Background.jpg");
+}
+
+p {
+    color: burlywood;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

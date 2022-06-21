@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+
+
+
+<head>
+    <script src="missionPage.js"></script>
+    <link rel="stylesheet" href="missionPage.css">
+</head>
+
+<body onload="generateMission()">
+
+    <button type="submit" onclick="generateMission()">Get new mission!</button>
+
+    <select id="missionTypeSelect" onchange="generateMission()">
+        <option value="random">Random Mission Type</option>
+        <option value="individual-based">Individual-Based Missions</option>
+        <option value="item-based">Item-Based Missions</option>
+        <option value="location-based">Location-Based Missions</option>
+        <option value="event-based">Event-Based Missions</option>
+    </select>
+
+    <p id="missionText"></p>
+
+</body>
+
+</html>

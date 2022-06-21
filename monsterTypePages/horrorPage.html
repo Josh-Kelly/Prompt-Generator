@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+
+
+
+<head>
+    <script src="horrorPage.js"></script>
+    <link rel="stylesheet" href="horrorPage.css">
+</head>
+
+
+
+<body>
+    <h1>HORROR GENERATOR</h1>
+    <div id="quickGen">
+        <button onclick="rollNature(), rollIntellect(), rollBasicForm(), rollAttribute(), rollSkin(), rollOtherFeature(), rollChitinPattern(), rollChitinTexture(), rollSpecialAttacks(), rollSpecialDefenses()">Quick Generate</button>
+    </div>
+    
+    <div id="horrorNatureDiv">
+        <button onclick="rollNature()">Nature of the Horror</button>
+        <p id="horrorNatureText"></p>
+    </div>
+
+    <div id="horrorIntellectDiv">
+        <button onclick="rollIntellect()">Intellect of the Horror</button>
+        <p id="horrorIntellectText"></p>
+    </div>
+
+    <div id="basicFormDiv">
+        <button onclick="rollBasicForm()">Basic Form</button>
+        <p id="basicFormText"></p>
+    </div>
+
+    <div id="attributeDiv">
+        <button onclick="rollAttribute()">Additional Element</button>
+        <p id="attributeText"></p>
+    </div>
+
+    <div id="skinDiv">
+        <button onclick="rollSkin()">Skin/Exterior</button>
+        <p id="skinText"></p>
+    </div>
+
+    <div id="otherFeatureDiv">
+        <button onclick="rollOtherFeature()">Other Feature</button>
+        <p id="otherFeatureText"></p>
+    </div>
+
+    <div id="chitinColorPatternDiv">
+        <button onclick="rollChitinPattern()">Chitin Color or Pattern</button>
+        <p id="chitinColorPatternText"></p>
+    </div>
+
+    <div id="chitinTextureDiv">
+        <button onclick="rollChitinTexture()">Chitin Texture</button>
+        <p id="chitinTextureText"></p>
+    </div>
+
+    <div id="specialDiv">
+        <button onclick="rollSpecialAttacks(), rollSpecialDefenses()">Special Attacks and Defenses</button>
+        <div id="specialTextDiv"></div>
+        <div id="specialDefenseTextDiv"></div>
+    </div>
+</body>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+
+
+
+<head>
+    <script src="humanoidPage.js"></script>
+    <link rel="stylesheet" href="humanoidPage.css">
+</head>
+
+
+
+<body>
+    <h1>HUMANOID GENERATOR</h1>
+    <div id="quickGen">
+        <button onclick="rollAnimalCharacteristics(), rollHumanMod(), rollDescriptor1(), rollDescriptor2(), rollRelationToOthers(), rollLeaderPrimeChars(), rollLeaderSecondChars(), rollTheme(), rollDevStages()">Quick Generate</button>
+    </div>
+    
+    <div id="physicalStructureDiv">
+        <button onclick="rollAnimalCharacteristics(), rollHumanMod()">Rough Physical Shape</button>
+        <p id="animalCharacteristicsText"></p>
+        <p id="humanModText"></p>
+    </div>
+
+    <div id="descriptionDiv">
+        <button onclick="rollDescriptor1(), rollDescriptor2()">Additional Descriptors</button>
+        <p id="descriptorOneText">
+            <p id="additionalOneText"></p>
+        </p>
+        <p id="descriptorTwoText">
+            <p id="additionalTwoText"></p>
+        </p>
+    </div>
+
+    <div id="relationshipDiv">
+        <button onclick="rollRelationToOthers()">Relationship to Other Humanoids</button>
+        <p id="relationshipText"></p>
+    </div>
+
+    <div id="leadershipDiv">
+        <button onclick="rollLeaderPrimeChars(), rollLeaderSecondChars()">Characteristics of Leader-Types</button>
+        <p id="primeCharText">
+            <p id="primeCharAdditionalText"></p>
+        </p>
+        <p id="secondaryCharText">
+            <p id="secondCharAdditionalText"></p>
+        </p>
+    </div>
+
+    <div id="mastermindThemeAndDev">
+        <h3>Intended only for mastermind-type humanoids (61-70 on Table 2-36), but could be fun anyway:</h3>    
+        <div id="themeDiv">
+            <button onclick="rollTheme()">Theme</button>
+            <p id="themeText"></p>
+        </div>
+
+        <div id="devStagesDiv">
+            <button onclick="rollDevStages()">Stages of Evolutionary/Cultural Development</button>
+            <p id="stageOneText"></p>
+            <p id="stageTwoText"></p>
+            <p id="stageThreeText"></p>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+</html>
