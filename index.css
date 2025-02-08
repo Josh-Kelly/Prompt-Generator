@@ -1,18 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
 body {
-    background-image: linear-gradient(rgba(4,9,30,0.45), rgba(4,9,30,0.45)), url("images/0Epic Background.jpg");
-}
-
-p, h3 {
-    color: burlywood;
-    font-size: 18px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.45), rgba(4, 9, 30, 0.45)), url("images/0Epic Background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content to top */
+    padding: 20px;
 }
 
-div {
-    border-width: 8px;
-    border-style: ridge;
-    width: 380px;
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    color: burlywood;
+}
+
+/* Header */
+header h1 {
+    text-align: center;
+    color: burlywood;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Generators Section */
+.generators {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Individual Generator Item */
+#villains-missions-minions,
+#dungeon-generators,
+#monster-generators {
     padding: 15px;
-    margin: 5px;
-    position: static;
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#villains-missions-minions h3,
+#dungeon-generators h3,
+#monster-generators h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+ol {
+    list-style-type: none;
+}
+
+button {
+    background-color: rgba(4, 9, 30, 0.8);
+    font-size: 1.1rem;
+    color: burlywood;
+    padding: 10px;
+    border: 2px solid burlywood;
+    border-radius: 8px;
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: rgba(4, 9, 30, 0.9);
+    transform: scale(1.05);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .generators {
+        grid-template-columns: 1fr;
+    }
 }

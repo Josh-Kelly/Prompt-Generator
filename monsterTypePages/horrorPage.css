@@ -1,60 +1,114 @@
-
-html {
-    background-image: url("../images/0Epic Background.jpg");
+/* General reset and font styling */
+* {
     margin: 0;
-    border: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
-#quickGen {
-    margin: 20 px;
-    padding: 20px;
+html, body {
+    font-family: Arial, sans-serif;
+    color: burlywood;
+    height: 100%; /* Ensure the page is full height */
+    min-height: 100vh; /* Allow the body to grow as needed */
 }
 
+/* Body and Container Styling */
 body {
-    background-image: linear-gradient(rgba(4,9,30,0.75), rgba(4,9,30,0.75)), url("../images/horrorImage.jpg");
+    background-image: linear-gradient(rgba(4, 9, 30, 0.75), rgba(4, 9, 30, 0.75)), url("../images/horrorImage.jpg");
     background-repeat: no-repeat;
-    position: relative;
-    left: 25em;
-    max-width: 1100px;
-    height: 1300px;
-    padding: 8px;
-    margin:0;
-    border: solid burlywood;
-    border-width: 0px 4px;
-    border-style: ridge;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps background fixed during scroll */
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to top */
+    padding: 20px;
+    min-height: 100vh; /* Allows full viewport height */
+    margin: 0;
 }
 
-p {
-    color: burlywood;
-    font-size: 22px;
-}
-
-nav {
-    border-width: 8px;
-    border-style: ridge;
-    width: 380px;
-    padding: 15px;
-    margin: 5px;
-    position: static;
-}
-
-div {
+/* Container Styling */
+.container {
+    max-width: 1200px;
     width: 100%;
-
-    color: burlywood;
-    font-size: 22px;
+    padding: 20px;
+    border: 4px solid burlywood;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin-top: 20px; /* Space at the top for content */
 }
 
-button {
-    background-image: linear-gradient(rgba(4,9,30,0.45), rgba(4,9,30,0.45)), url("../images/0Epic Background.jpg");
+/* Header Styling */
+header h1 {
+    color: burlywood;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+/* Quick Generate Button Styling */
+.quick-gen {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.quick-gen button {
+    background-color: rgba(4, 9, 30, 0.8);
+    font-size: 20px;
+    color: burlywood;
+    padding: 15px 30px;
+    border: 2px solid burlywood;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quick-gen button:hover {
+    background-color: rgba(4, 9, 30, 0.9);
+    transform: scale(1.05);
+}
+
+/* Generator Section Styling */
+.generator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.generator-item {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.generator-item button {
+    background-color: rgba(4, 9, 30, 0.8);
     font-size: 18px;
     color: burlywood;
+    padding: 12px 20px;
+    border: 2px solid burlywood;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-h1 {
+.generator-item button:hover {
+    background-color: rgba(4, 9, 30, 0.9);
+    transform: scale(1.05);
+}
+
+/* Text Styling for Generated Content */
+p {
+    font-size: 18px;
+    margin-top: 10px;
     color: burlywood;
-    position: relative;
-    left: 35%;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .generator {
+        grid-template-columns: 1fr;
+    }
 }

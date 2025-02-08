@@ -1,0 +1,2 @@
+
+(Mostly done - just need to fix attacks and defenses) Working on fixing the Horror page to actually reflect the right weights
